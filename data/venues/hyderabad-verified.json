@@ -1,0 +1,59 @@
+{
+  "dataset": "Hyderabad verified venue records",
+  "scope": "A partial public directory of venues with a direct operator or venue source checked on 2026-08-16. A verified record is not an endorsement, availability guarantee, or price check.",
+  "method": "Direct venue/operator webpages were reviewed. Fields the source did not state are recorded as unknown or null.",
+  "updated_at": "2026-08-16",
+  "records": [
+    {
+      "name": "Pickleball Central",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "status": "open",
+      "verification_status": "verified",
+      "date_checked": "2026-08-16",
+      "sources": [{"url": "https://pickleball-central.co.in/", "source_type": "venue", "accessed_at": "2026-08-16"}],
+      "court_type": "unknown",
+      "court_count": 4,
+      "indoor_outdoor": "unknown",
+      "surface": null,
+      "pricing": null,
+      "booking_method": "The venue website describes online court booking and UPI checkout.",
+      "editor_notes": "The operator page states four courts, Peerzadiguda, and daily hours of 6:00 AM–11:00 PM. Court type, surface and standard court-hire price were not recorded in this snapshot.",
+      "updated_at": "2026-08-16"
+    },
+    {
+      "name": "4S Pickleball",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "status": "open",
+      "verification_status": "verified",
+      "date_checked": "2026-08-16",
+      "sources": [{"url": "https://4spickleball.com/", "source_type": "venue", "accessed_at": "2026-08-16"}],
+      "court_type": "dedicated",
+      "court_count": 1,
+      "indoor_outdoor": "outdoor",
+      "surface": null,
+      "pricing": null,
+      "booking_method": "The venue website directs readers to book online via its booking partner.",
+      "editor_notes": "The operator page describes one dedicated, lighted outdoor pickleball court at Mayuri Nagar, Miyapur, with listed hours of 7:00 AM–10:00 PM daily. Surface and current court-hire price were not stated.",
+      "updated_at": "2026-08-16"
+    },
+    {
+      "name": "Crosscourt Sports Club",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "status": "open",
+      "verification_status": "verified",
+      "date_checked": "2026-08-16",
+      "sources": [{"url": "https://xcourtsports.com/pay-play/pickleball/", "source_type": "operator", "accessed_at": "2026-08-16"}],
+      "court_type": "unknown",
+      "court_count": 12,
+      "indoor_outdoor": "unknown",
+      "surface": null,
+      "pricing": null,
+      "booking_method": "The operator page includes a court-booking route.",
+      "editor_notes": "The operator's pickleball page describes 12 courts and lists its address in Vattinagulapalli Village, Gandipet, Hyderabad 500075. The source did not establish the court type, surface, indoor/outdoor status, or current court-hire price for this snapshot.",
+      "updated_at": "2026-08-16"
+    }
+  ]
+}
