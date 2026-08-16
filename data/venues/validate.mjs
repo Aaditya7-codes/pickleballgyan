@@ -13,7 +13,9 @@ for (const record of dataset.records) {
   if (record.publication_status !== 'published') errors.push(`${record.id}: non-published record in canonical dataset`);
   if (!['verified', 'reported', 'estimated'].includes(record.verification_status)) errors.push(`${record.id}: invalid public evidence status`);
   if (!record.source?.url?.startsWith('https://')) errors.push(`${record.id}: source must be an https URL`);
+  if (!['matched_named_place', 'not_geocoded', 'needs_review'].includes(record.geocode_status)) errors.push(`${record.id}: invalid geocode status`);
   if (record.coordinates !== null && (!Number.isFinite(record.coordinates.latitude) || !Number.isFinite(record.coordinates.longitude))) errors.push(`${record.id}: invalid coordinates`);
+  if (record.geocode_status === 'matched_named_place' && record.coordinates === null) errors.push(`${record.id}: matched place missing coordinates`);
 }
 
 if (errors.length) {
