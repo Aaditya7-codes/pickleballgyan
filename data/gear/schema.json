@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pickleball Gyan gear market record",
+  "type": "object",
+  "required": ["brand", "product_name", "category", "listing_status", "seller", "price_inr", "source_url", "date_checked", "editor_notes", "updated_at"],
+  "properties": {
+    "brand": {"type": "string"},
+    "product_name": {"type": "string"},
+    "category": {"enum": ["paddle", "ball", "shoe", "accessory"]},
+    "listing_status": {"enum": ["verified_listing", "reported_listing", "unavailable", "discontinued_or_unknown"]},
+    "seller": {"type": "string"},
+    "price_inr": {"type": ["number", "null"], "minimum": 0},
+    "stock_status": {"enum": ["in_stock", "out_of_stock", "unknown"]},
+    "warranty_note": {"type": ["string", "null"]},
+    "source_url": {"type": "string", "format": "uri"},
+    "date_checked": {"type": "string", "format": "date"},
+    "manufacturer_claims": {"type": "array", "items": {"type": "string"}},
+    "editor_notes": {"type": "string"},
+    "updated_at": {"type": "string", "format": "date"}
+  }
+}
