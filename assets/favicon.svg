@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pickleball Gyan">
-  <rect width="64" height="64" rx="15" fill="#153c30"/>
-  <path d="M19 16h17c8 0 13 4 13 11 0 6-4 10-10 11l8 10H36l-7-10h-1v10H19V16zm9 8v7h8c3 0 5-1 5-4 0-2-2-3-5-3h-8z" fill="#fffdf7"/>
-  <circle cx="47" cy="17" r="8" fill="#ef5b2a"/>
-  <g fill="#153c30"><circle cx="44" cy="14" r="1.2"/><circle cx="49" cy="13" r="1.2"/><circle cx="46" cy="18" r="1.2"/><circle cx="51" cy="18" r="1.2"/><circle cx="43" cy="20" r="1.2"/></g>
+  <circle cx="32" cy="32" r="29" fill="#f5f2ea" stroke="#123c2c" stroke-width="3"/>
+  <path d="M10 18c13-12 31-13 44 0M10 46c13 12 31 13 44 0" fill="none" stroke="#123c2c" stroke-width="2"/>
+  <g fill="#e85632"><circle cx="23" cy="23" r="3"/><circle cx="40" cy="29" r="3"/><circle cx="28" cy="41" r="3"/></g>
 </svg>
