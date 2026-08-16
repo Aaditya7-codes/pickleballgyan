@@ -1,0 +1,52 @@
+{
+  "dataset": "State of Pickleball in India 2026 source ledger",
+  "updated_at": "2026-08-16",
+  "scope": "Sources and limits behind the initial State of Pickleball in India 2026 baseline.",
+  "sources": [
+    {
+      "id": "myas-2025-nsf-list",
+      "publisher": "Ministry of Youth Affairs and Sports, Government of India",
+      "url": "https://yas.gov.in/en/sports/list-of-recognised-national-sports-federations-for-the-year-2025?page=1",
+      "source_type": "government record",
+      "accessed_at": "2026-08-16",
+      "used_for": "2025 recognition context",
+      "limit": "It is a 2025 institutional list; it is not an ecosystem census."
+    },
+    {
+      "id": "ipa-homepage",
+      "publisher": "Indian Pickleball Association",
+      "url": "https://www.ipaofficial.com/",
+      "source_type": "association first-party page",
+      "accessed_at": "2026-08-16",
+      "used_for": "IPA-reported players, state coverage and ranking-tournament claims",
+      "limit": "Claims are attributed to IPA and not independently verified as national totals."
+    },
+    {
+      "id": "aipa-overview",
+      "publisher": "All India Pickleball Association",
+      "url": "https://www.pickleball.in/newwebsite/index_gsl.php",
+      "source_type": "association first-party page",
+      "accessed_at": "2026-08-16",
+      "used_for": "AIPA-reported history, player and state-coverage claims",
+      "limit": "Claims are attributed to AIPA and not independently verified as national totals."
+    },
+    {
+      "id": "pbg-hyderabad-verified",
+      "publisher": "Pickleball Gyan",
+      "url": "https://pickleballgyan.in/data/venues/hyderabad-verified.json",
+      "source_type": "structured first-party research dataset",
+      "accessed_at": "2026-08-16",
+      "used_for": "audited venue pilot",
+      "limit": "Partial Hyderabad-only collection; not a national court count."
+    },
+    {
+      "id": "pbg-price-check",
+      "publisher": "Pickleball Gyan",
+      "url": "https://pickleballgyan.in/data/gear/india-price-check-2026-08-16.json",
+      "source_type": "structured first-party market dataset",
+      "accessed_at": "2026-08-16",
+      "used_for": "direct seller listed-price snapshot",
+      "limit": "Selected product listings; not a market-size measure, recommendation or availability feed."
+    }
+  ]
+}
