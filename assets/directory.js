@@ -8,7 +8,8 @@
     const evidence = label(record.verification_status);
     const freshness = record.verification_status === 'verified' ? 'Primary source' : `Reported by ${escape(record.source.publisher)}`;
     const count = record.court_count === null ? 'Not stated' : `${record.court_count} (source-stated)`;
-    return `<article class="directory-record"><div class="directory-record__top"><div><p class="eyebrow">${evidence}</p><h2>${escape(record.name)}</h2></div><span class="directory-date">Checked ${escape(record.date_checked)}</span></div><dl><div><dt>Locality</dt><dd>${escape(record.locality)}</dd></div><div><dt>Courts</dt><dd>${count}</dd></div><div><dt>Source</dt><dd>${freshness}</dd></div></dl><p class="directory-note">${escape(record.editor_notes)}</p><div class="directory-actions"><a href="${escape(record.source.url)}" rel="noopener noreferrer">Open source ↗</a><a href="${mapUrl(record.map_query)}" rel="noopener noreferrer">Map search ↗</a></div></article>`;
+    const location = record.address || record.locality;
+    return `<article class="directory-record"><div class="directory-record__top"><div><p class="eyebrow">${evidence}</p><h2>${escape(record.name)}</h2></div><span class="directory-date">Checked ${escape(record.date_checked)}</span></div><dl><div><dt>Location</dt><dd>${escape(location)}</dd></div><div><dt>Courts</dt><dd>${count}</dd></div><div><dt>Source</dt><dd>${freshness}</dd></div></dl><p class="directory-note">${escape(record.editor_notes)}</p><div class="directory-actions"><a href="${escape(record.source.url)}" rel="noopener noreferrer">Open source ↗</a><a href="${mapUrl(record.map_query)}" rel="noopener noreferrer">Map search ↗</a></div></article>`;
   }
 
   function showSummary(records, target) {
