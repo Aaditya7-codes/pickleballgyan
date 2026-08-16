@@ -1,0 +1,43 @@
+name: Venue update
+description: Submit an attributable correction or update for a Pickleball Gyan venue record.
+title: "Venue update: "
+labels: ["venue-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the directory. Submitting this form does not guarantee publication. Please provide a public source where possible; do not include personal contact details that you do not have permission to share.
+  - type: input
+    id: venue
+    attributes:
+      label: Venue name and city
+      placeholder: Example Pickleball Club, Hyderabad
+    validations:
+      required: true
+  - type: dropdown
+    id: update_type
+    attributes:
+      label: What needs updating?
+      options:
+        - Venue status
+        - Location or booking link
+        - Court type or court count
+        - Hours or price
+        - Other factual correction
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Proposed correction
+      description: State only the fact that should change.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL
+      description: Official venue/operator source preferred. Booking-platform links will be labelled accordingly.
+      placeholder: https://
+    validations:
+      required: true
