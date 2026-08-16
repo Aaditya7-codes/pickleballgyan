@@ -11,12 +11,15 @@ https://pickleballgyan.in/
 Static HTML/CSS/JS, designed for GitHub Pages.
 
 ## Launch information architecture
-- Play
+- Learn
 - Gear
-- Scene
+- Play
+- Tournaments
+- News
 - Data
-- Places
-- About / Editorial / Methodology / Corrections
+- About / Editorial policy / Methodology / Corrections
+
+`/scene/` and `/places/` remain available as early landing paths while the primary navigation uses the launch architecture above.
 
 ## Deployment
 1. Create a public GitHub repository named `pickleballgyan`.
